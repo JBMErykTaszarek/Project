@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\erykt\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\erykt\\.nuget\\packages"
+    ]
+  }
+}
