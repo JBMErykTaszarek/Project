@@ -10,17 +10,18 @@ namespace Project.Controllers
     [ApiController]
      public class CommandsController : ControllerBase
      {
-        
+        private readonly ICommanderRepo _repository;
+
         public CommandsController(ICommanderRepo repository)
         {
-            _repository = (MockCommanderRepo)repository;
+            _repository = (SqlCommanderRepo)repository;
         }
-         private readonly MockCommanderRepo _repository = new MockCommanderRepo();
+         
          //GET api/commands
          [HttpGet]
          public ActionResult <IEnumerable<Command>> GetAllCommands()
          {
-            var commandItems = _repository.GerAppCommands();
+            var commandItems = _repository.GetAllCommands();
 
             return Ok(commandItems);
          }

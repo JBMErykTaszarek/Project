@@ -5,7 +5,7 @@ namespace Project.Data
 {
     public interface ICommanderRepo
     {
-        IEnumerable<Command> GerAppCommands();
+        IEnumerable<Command> GetAllCommands();
         Command GetCommandById(int id);
     }
 }

@@ -5,7 +5,7 @@ namespace Project.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GerAppCommands()
+        public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
             {
